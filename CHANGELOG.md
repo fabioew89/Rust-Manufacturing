@@ -1,3 +1,15 @@
+## 0.4.0 (2025-11-26)
+
+### Feat
+
+- add pages in include folder
+- upt default.html
+- add about page
+
+### Fix
+
+- upt .gitignore
+
 ## 0.3.0 (2025-11-26)
 
 ### Feat
