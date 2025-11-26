@@ -4,3 +4,5 @@ dev
 development
 .env
 env
+.jekyll-metadata
+Gemfile.lock
