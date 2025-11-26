@@ -1,3 +1,9 @@
+## 0.2.0 (2025-11-26)
+
+### Feat
+
+- add .jekyll-metadata and Gemfile.lock in .gitignore
+
 ## 0.1.1 (2025-11-26)
 
 ### Fix
