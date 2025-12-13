@@ -1,0 +1,79 @@
+<div class="min-h-screen bg-gray-50 flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
+  <header class="w-full max-w-2xl flex items-center mb-8">
+    <button (click)="voltar()" class="p-2 rounded-full hover:bg-gray-200 text-gray-500 transition duration-150 ease-in-out">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+      </svg>
+    </button>
+    <div class="ml-4 flex flex-col">
+      <h1 class="text-2xl font-semibold text-gray-900">Novo Item</h1>
+      <p class="text-sm text-gray-500">Cadastrar Item rastreável</p>
+    </div>
+    <img src="images/logo.png" alt="Logo" class="w-20 h-20 ml-auto hidden sm:block">
+  </header>
+
+  <div class="w-full max-w-2xl bg-white p-8 rounded-xl shadow-lg">
+    <form>
+      <div class="mb-6">
+        <label for="nomeItem" class="block text-sm font-medium text-gray-700">
+          Nome do Item <span class="text-red-500">*</span>
+        </label>
+        <input type="text" id="nomeItem" name="nomeItem" placeholder="Ex: Notebook Dell XPS" 
+               class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+      </div>
+
+      <div class="mb-6">
+        <label for="descricao" class="block text-sm font-medium text-gray-700">
+          Descrição
+        </label>
+        <textarea id="descricao" name="descricao" rows="3" placeholder="Descrição detalhada do Item..." 
+                  class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm resize-none"></textarea>
+      </div>
+
+      <div class="mb-6">
+        <label for="categoria" class="block text-sm font-medium text-gray-700">
+          Categoria <span class="text-red-500">*</span>
+        </label>
+        <select id="categoria" name="categoria" 
+                class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md appearance-none bg-white border">
+          <option value="" disabled selected>Selecione uma categoria</option>
+          <option value="eletronico">Eletrônico</option>
+          <option value="ferramenta">Ferramenta</option>
+        </select>
+        </div>
+      
+      <div class="mb-6">
+        <label for="localizacao" class="block text-sm font-medium text-gray-700">
+          Localização Atual <span class="text-red-500">*</span>
+        </label>
+        <input type="text" id="localizacao" name="localizacao" placeholder="Ex: Armazém Central - SP"
+               class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+      </div>
+
+      <div class="mb-6">
+        <label for="status" class="block text-sm font-medium text-gray-700">
+          Status Inicial
+        </label>
+        <select id="status" name="status"
+                class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md appearance-none bg-white border">
+          <option value="pendente">Pendente</option>
+          <option value="em-processamento">Em Processamento</option>
+          <option value="em-transito">Em Transito</option>
+          <option value="em-separacao">Em Separação</option>
+          <option value=""></option>
+        </select>
+      </div>
+
+      <div class="pt-4 flex justify-end space-x-3">
+        <button type="button" (click)="cancelar()"
+                class="px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+          Cancelar
+        </button>
+        <button type="submit"
+                class="px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+          Criar Item
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

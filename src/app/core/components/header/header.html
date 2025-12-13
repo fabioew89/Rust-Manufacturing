@@ -1,17 +1,21 @@
-<header class="border-b border-gray-200 p-10">
-    <div class="container mx-auto flex flex-row items-center gap-5">
+<header class="border-b border-gray-200 p-4">
+  <div class="container mx-auto flex items-center justify-between">
+    
 
-        <div class="p-2 bg-blue-100 rounded-xl">
-            <i class="fa-solid fa-box-open text-xl text-blue-500"></i>
-        </div>
-        
-        <div>
-            <h1 class="text-2xl font-bold">Rust Manufacturing</h1>
-            <h3 class="text-sm text-gray-500">Sistema de Rastreabilidade</h3>
-        </div>
-
-        <div class="ml-auto">
-            <p>navigation</p>
-        </div>
+    <div class="flex items-center gap-4">
+      <img src="images/logo.png" alt="Logo" class="w-20 h-20">
+      <div>
+        <h1 class="text-2xl font-bold">Rust Manufacturing</h1>
+        <h3 class="text-sm text-gray-500">Sistema de Rastreabilidade</h3>
+      </div>
     </div>
+
+    <nav>
+      
+          <button (click)="logout()" class="text-red-600 hover:text-red-800 font-semibold">
+            Sair
+          </button>
+        
+    </nav>
+  </div>
 </header>

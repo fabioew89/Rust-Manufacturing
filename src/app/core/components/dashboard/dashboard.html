@@ -1,42 +1,44 @@
-<app-header></app-header>
+<div class="container mx-auto max-w-4xl pt-10 px-4"> 
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-<div class="container mx-auto h-20 grid grid-cols-2 gap-4 pt-10">
+        <div class="shadow-md border border-gray-200 rounded-xl p-8 flex flex-col items-center 
+                    hover:shadow-xl transition-shadow duration-300 bg-white">
+            
+            <div class="bg-blue-100 rounded-full mb-6 h-16 w-16 flex items-center justify-center">
+                <span class="fa-solid fa-qrcode text-3xl text-blue-500"></span>
+            </div>
+            
+            <div class="text-center mb-6">
+                <h1 class="font-bold text-xl text-gray-800">Escanear QR Code</h1>
+                <p class="text-sm text-gray-500">Use a câmera para ler um QR Code e rastrear um item</p>
+            </div>
+            
+            <button class="bg-blue-600 text-white w-full py-3 rounded-xl hover:bg-blue-700 transition duration-150 ease-in-out">
+                <span class="fa-solid fa-qrcode mr-2"></span>
+                Click Me
+            </button> 
+        </div>
 
-    <!-- col 1 -->
-    <div class="shadow-xs border border-gray-200 rounded-xl p-5 flex flex-col items-center hover:shadow-lg transition-shadow duration-300">
-        
-        <div class="bg-blue-100 rounded-full mb-5 h-16 w-16 flex items-center justify-center">
-            <span class="fa-solid fa-qrcode text-3xl text-blue-500"></span>
-        </div> <!-- span -->
-        
-        <div class="text-center mb-5">
-            <h1 class="font-bold text-xl">Escanear QR Code</h1>
-            <p class="text-sm text-gray-500">Use a câmera para ler um QR Code e rastrear um item</p>
-        </div> <!-- text -->
-        
-
-        <button class="border bg-blue-500 text-white w-full p-3 rounded-xl" >
-            <span class="fa-solid fa-qrcode"></span>
-            Click Me
-        </button> 
-    </div>
-
-    <!-- col 2 -->
-    <div class="shadow-xs border border-gray-200 rounded-xl p-5 flex flex-col items-center hover:shadow-lg transition-shadow duration-300">
-        
-        <div class="bg-green-100 rounded-full mb-5 h-16 w-16 flex items-center justify-center">
-            <span class="fa-solid fa-plus text-3xl text-green-500 "></span>
-        </div><!-- icon -->
-        
-        <div class="text-center mb-5">
-            <h1 class="font-bold text-xl">Escanear QR Code</h1>
-            <p class="text-sm text-gray-500">Use a câmera para ler um QR Code e rastrear um item</p>
-        </div><!-- text -->
-        
-        <button class="bg-green-50 border border-green-500  text-white w-full p-3 rounded-xl">
-            <span class="fa-solid fa-plus text-green-500"></span>
-            <span class="text-green-500 ml-2">Cadastrar Item</span>
-        </button><!-- button -->
-
+        <div class="shadow-md border border-gray-200 rounded-xl p-8 flex flex-col items-center 
+                    hover:shadow-xl transition-shadow duration-300 bg-white">
+            
+            <div class="bg-green-100 rounded-full mb-6 h-16 w-16 flex items-center justify-center">
+                <span class="fa-solid fa-plus text-3xl text-green-500"></span>
+            </div>
+            
+            <div class="text-center mb-6">
+                <h1 class="font-bold text-xl text-gray-800">Cadastrar Item</h1>
+                <p class="text-sm text-gray-500">Cadastrar novo item rastreável</p>
+            </div>
+            
+            <a routerLink="/novo-item" 
+               class="bg-green-50 border border-green-500 text-green-700 w-full py-3 rounded-xl 
+                      hover:bg-green-100 transition duration-150 ease-in-out font-medium 
+                      flex items-center justify-center no-underline">
+                <span class="fa-solid fa-plus mr-2"></span>
+                Cadastrar Item
+            </a>
+        </div>
     </div>
 </div>
