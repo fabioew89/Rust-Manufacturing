@@ -8,7 +8,7 @@ export const routes: Routes = [
     {
         path: 'novo-item',
         component: ItemCadastroComponent,
-        title: "Novo Item"
+        title: "Novo Item"  
     },
     {
         path: "login",
