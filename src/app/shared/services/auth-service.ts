@@ -7,14 +7,14 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
   private users: User[] = [
-    { name: "Fabio", username: "Fabio", password: "Fabio123" },
-    { name: "Erika", username: "Erika", password: "Erika123" },
-    { name: "Sabrina", username: "Sabrina", password: "Sabrina123" },
-    { name: "Leo", username: "Leo", password: "Leo123" },
-    { name: "Cristie", username: "Cristie", password: "Cristie123" },
-    { name: "Saymon", username: "Saymon", password: "Saymon123" },
-    { name: "Lucas", username: "Lucas", password: "Lucas123" },
-    { name: "LucasProf", username: "LucasProf", password: "LucasProf123" },
+    { name: "Fabio", username: "fabio", password: "fabio123" },
+    { name: "Erika", username: "erika", password: "erika123" },
+    { name: "Sabrina", username: "sabrina", password: "sabrina123" },
+    { name: "Leo", username: "leo", password: "leo123" },
+    { name: "Cristie", username: "cristie", password: "cristie123" },
+    { name: "Saymon", username: "saymon", password: "saymon123" },
+    { name: "Lucas", username: "lucas", password: "lucas123" },
+    { name: "LucasProf", username: "lucasprof", password: "lucasprof123" },
   ]
 
   private router = inject(Router);
