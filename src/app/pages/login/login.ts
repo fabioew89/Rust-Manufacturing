@@ -14,6 +14,8 @@ export class Login {
   formBuilder = inject(FormBuilder);
   authService = inject(AuthService);
 
+  loginError: boolean = false;
+
   formLogin = this.formBuilder.group({
     login: ['', [Validators.required, Validators.minLength(3)]],
     password: ['', [Validators.required, Validators.minLength(6)]],
@@ -26,13 +28,14 @@ export class Login {
     const isLoginInvalid = login?.invalid && login?.touched;
     const isPasswordInvalid = password?.invalid && password?.touched;
 
-    return !!(isLoginInvalid || isPasswordInvalid)
+    return !!(isLoginInvalid || isPasswordInvalid || this.loginError)
   }
 
   handleLogin() {
     const username = this.formLogin.get('login')?.value || "";
     const password = this.formLogin.get('password')?.value || "";
-    console.log(username, password)
+
+    this.loginError = true;
 
     this.authService.login(username, password);
   }
