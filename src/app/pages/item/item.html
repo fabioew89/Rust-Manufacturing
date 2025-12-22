@@ -1,0 +1,80 @@
+<header class="border-b border-gray-300">
+    <div class="flex justify-between 2xl:max-w-[75%] mx-auto">
+        <div class="flex items-center p-4 gap-3 ">
+            <button routerLink="/dashboard"
+                class="flex items-center justify-center rounded-lg w-10 h-10 hover:bg-green-600 hover:text-gray-50 transition-all duration-300 outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                </svg>
+            </button>
+            <div class="flex items-center justify-center bg-blue-100 w-10 h-10 rounded-xl">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0080ff"
+                    class="bi bi-box-seam w-5 h-5" viewBox="0 0 16 16">
+                    <path
+                        d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z" />
+                </svg>
+            </div>
+            <div class="flex flex-col">
+                <h3 class="font-bold text-2xl text-gray-800">Item Title</h3>
+                <span class="text-sm text-gray-500">Item Category</span>
+            </div>
+        </div>
+        <div class="flex items-center justify-center">
+            <button class="bg-red-500 text-white text-md py-2 px-3 rounded-lg" type="button">
+                <i class="bi bi-trash"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<div class="container grid grid-cols-[1fr_30%] mx-auto gap-6 mt-8">
+    <div class="flex flex-col gap-6">
+        <div class="container bg-white border border-gray-300 mx-auto rounded-xl p-5">
+            <div class="flex justify-between">
+                <h2 class="text-xl font-medium">Status Atual</h2>
+                <div class="bg-amber-500 flex justify-center items-center rounded-xl">
+                    <span class="px-3 py-1 text-xs font-bold text-white rounded-xl leading-tight">Item Status</span>
+                </div>
+            </div>
+            <div class="text-gray-500 font-medium my-3 text-sm">
+                <i class="bi bi-geo-alt mr-2"></i>
+                <span>Localization</span>
+            </div>
+            <div class="text-gray-500 text-sm">
+                <i class="bi bi-clock mr-2"></i>
+                <span>Last update: $Data at $Hour</span>
+            </div>
+        </div>
+        <div class="container bg-white border border-gray-300 mx-auto rounded-xl p-5">
+            <div class="flex flex-col">
+                <h2 class="text-xl font-medium mb-3">Descrição</h2>
+                <p class="text-gray-500 text-sm m-0">Description</p>
+            </div>
+            <div class="text-gray-500 border-t border-gray-300 pt-3 mt-3 text-sm">
+                <div>
+                    <strong>Código: </strong><span>$code</span>
+                </div>
+                <div>
+                    <strong>Criado em: </strong><span>$createdAt</span>
+                </div>
+            </div>
+        </div>
+        <div class="container bg-white border border-gray-300 mx-auto rounded-xl p-5">
+            <h2 class="text-xl font-medium mb-3">Histórico de Movimentações</h2>
+        </div>
+    </div>
+    <div class="flex flex-col items-center container p-5 bg-white border border-gray-300 rounded-xl">
+        <h2 class="text-lg font-medium text-center">QR Code do Item</h2>
+        <div>
+            <img class="mx-auto my-14" src="https://placehold.co/160" alt="QR Code Image Example">
+        </div>
+        <span class="text-gray-500 text-xs text-center">$TRACK-CODE</span>
+        <button
+            class="justify-center items-center w-full p-2 rounded-xl text-sm bg-blue-500 text-white font-medium mt-4">
+            <i class="bi bi-download mr-5"></i>
+            <span>Baixar QR Code</span>
+        </button>
+    </div>
+</div>
