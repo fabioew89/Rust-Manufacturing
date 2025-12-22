@@ -8,8 +8,6 @@ export class formValidators {
             const minLength = 3;
             const maxLength = 100;
 
-            console.log(name.trim().length)
-
             if (name.trim().length < minLength || name.trim().length > maxLength) {
                 return { 'minLength': minLength, 'maxLength': maxLength };
             }
