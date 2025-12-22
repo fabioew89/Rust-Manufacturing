@@ -119,4 +119,9 @@ export class TrackedItems {
 
     localStorage.setItem('trackedItems', JSON.stringify(this.trackedItems()));
   }
+
+  deleteItem(id: string) {
+    this.trackedItems.update(currentList => currentList.filter(item => item.id !== id));
+    localStorage.setItem('trackedItems', JSON.stringify(this.trackedItems()));
+  }
 }

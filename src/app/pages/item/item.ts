@@ -29,4 +29,9 @@ export class Item implements OnInit {
       }
     }
   }
+
+  deleteItem() {
+    this.router.navigate(['dashboard'])
+    this.trackedItems.deleteItem(this.id!);
+  }
 }
